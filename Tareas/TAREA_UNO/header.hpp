@@ -1,11 +1,18 @@
-#ifndef
+#ifndef AHORCADO_H
 #define AHORCADO_H
+
+
+#include <string>
+using namespace std;
 // Se define la estructura de "Ahorcado"
 struct Ahorcado
 {
-char nombre[50]; // Se establece el tamaño del array de la palabra a adivinar.
-char estado;
-int IntentosPermitidos;
-int IntentosRealizados;
+    string palabraAdivinar;       // La palabra a adivinar
+    string estadoActual;          // El estado actual de la palabra adivinada
+    int intentosPermitidos;       // El número máximo de intentos permitidos
+    int intentosRealizados;       // El número actual de intentos realizados
 };
-#endif
+
+
+
+#endif// AHORCADO_H
