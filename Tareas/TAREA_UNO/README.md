@@ -1,4 +1,9 @@
 # Tarea 1, IE-0207, Andrés Bonilla Vega, B81220.
+### Parte Práctica
+Instrucciones para compilación.  
+Usar este comando: ``g++ -o ahorcado .\main.cpp``  
+En esta dirección: ``.IE0217/Tareas/TAREA_UNO/src``  
+### Parte Teórica
 ### 1. ¿Cuál es la principal diferencia entre C y C++?
 Hay diversas diferencias y similitudes entre los lenguajes C y C++. En el caso del lenguaje C, es fundamentalmente procedural y se centra en funciones y estructuras de datos, con una complejidad relativamente menor en comparación con C++. Además, los usuarios tienen un control más directo sobre la memoria mediante funciones como malloc() y free(). Por otro lado, en el lenguaje C++, se orienta hacia la programación orientada a objetos, haciendo uso de herramientas como el polimorfismo. C++ es generalmente más complejo que C, ya que incorpora conceptos como sobrecarga de funciones, herencia y una sintaxis más complicada de leer e implementar, especialmente para quienes están aprendiendo. En cuanto al manejo de memoria en C++, se realiza utilizando funciones como new y delete, además de la posibilidad de emplear punteros y punteros inteligentes para gestionar la memoria.
 
