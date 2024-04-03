@@ -13,9 +13,15 @@ double altura;
 
 
 Molde(){ // Inicializador de la clase. El CONSTRUCTOR.
+// El constructor se puede definir de diferentes maneras.
 cout << "Esto se ejecuta en cada instanciacion" << endl;
-cout << "Iniciando un objeto de la clase Room" << endl;
+cout << "Iniciando un objeto de la clase Espacio" << endl;
+}
 
+
+~Molde(){ // Inicializador de la clase. El CONSTRUCTOR.
+// El constructor se puede definir de diferentes maneras.
+cout << "Saludando desde el destructor" << endl;
 }
 // Funciones definidos en la clase son conocidos como METODOS.
 
@@ -36,8 +42,8 @@ int main(){
 // Con esta variable tipo 'molde' se puede acceder a los miembros(atributos) de la clase
 Molde pared; //se ejecuta la linea 15
 pared.largo = 408.5;
-pared.ancho =-20.8;
-pared.altura/=-315.2;
+pared.ancho = -20.8;
+pared.altura = -315.2;
 
 
 cout << "Area = " << pared.calcularArea() << endl;
