@@ -1,7 +1,5 @@
 #include "header.hpp"
 
-
-
 // Función para seleccionar una palabra aleatoria y llamar a la función "verificacion"
 
 int main() {
