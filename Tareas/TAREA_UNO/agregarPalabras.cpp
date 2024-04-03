@@ -1,4 +1,4 @@
-#include <iostream>
+#include "header.hpp"
 void agregarPalabra(std::string palabras[], int& longitud) {
     std::string nuevaPalabra;
     std::cout << "Ingrese la nueva palabra: ";
