@@ -1,7 +1,6 @@
 #include <iostream> 
 #include "header.hpp"
 
-
 bool adivinar(const std::string& palabra) {
     char caracterABuscar;
     std::cout << "Ingrese un caracter: ";
