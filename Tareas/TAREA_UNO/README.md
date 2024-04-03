@@ -3,7 +3,8 @@
 Instrucciones para compilación.    
 Clonar el repositorio.  
 Ir a esta directorio: ``.IE0217/Tareas/TAREA_UNO/src``  
-Usar este comando: ``g++ -o ahorcado .\main.cpp``  
+Usar este comando: ``g++ -o ahorcado .\main.cpp``   
+Es muy importante recalcar que la dificultad se le tiene que indicar. No hay dificultad predeterminada. Una vez indicada, el juego se puede ejecutar con la cantidad de intentos que uno desee.
 
 ### Parte Teórica
 ### 1. ¿Cuál es la principal diferencia entre C y C++?
