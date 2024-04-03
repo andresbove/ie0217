@@ -1,6 +1,6 @@
 #include <iostream> // Se incluye la biblioteca 'iostream' en el header para imprimir mensajes en pantalla
 
-using namespace std;
+using namespace std; // Se utiliza esta linea para simplificar el uso de 'cout'
 
 int main (){
     // Se crean variables 'locales' con respecto al 'main'
