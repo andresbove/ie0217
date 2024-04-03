@@ -1,6 +1,6 @@
 # Tarea 1, IE-0207, Andrés Bonilla Vega, B81220.
 ### Parte Práctica
-Instrucciones para compilación. 
+Instrucciones para compilación.  
 Clonar el repositorio. 
 Usar este comando: ``g++ -o ahorcado .\main.cpp``  
 En esta dirección: ``.IE0217/Tareas/TAREA_UNO/src``  
