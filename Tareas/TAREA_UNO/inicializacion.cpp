@@ -1,9 +1,4 @@
-#include <iostream>
-#include <string>
-#include "verificacion.cpp"
-#include <cstdlib> // Para utilizar la función rand()
-#include <ctime>   // Para inicializar la semilla de generación de números aleatorios
-
+#include "header.hpp"
 
 void inicializacion(const std::string palabras[], int longitud) {
     // Inicializar la semilla del generador de números aleatorios

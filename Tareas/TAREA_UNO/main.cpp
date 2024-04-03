@@ -1,11 +1,6 @@
-#include <iostream>
-#include <string>
-#include "inicializacion.cpp"
-#include "diccionario.cpp"
-#include "dificultad.cpp"
-#include "agregarPalabras.cpp"
-#include <cstdlib> // Para utilizar la función rand()
-#include <ctime>   // Para inicializar la semilla de generación de números aleatorios
+#include "header.hpp"
+
+
 
 // Función para seleccionar una palabra aleatoria y llamar a la función "verificacion"
 

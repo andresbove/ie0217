@@ -1,4 +1,3 @@
-#include <iostream> 
 #include "header.hpp"
 
 bool adivinar(const std::string& palabra) {

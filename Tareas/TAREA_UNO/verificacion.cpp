@@ -1,5 +1,4 @@
-#include <iostream>
-#include "adivinar.cpp"
+#include "header.hpp"
 
 void verificacion(const std::string& palabra) {
     int contador = 0;
