@@ -4,6 +4,7 @@
 #include <string>
 #include <cstdlib> // Para utilizar la función rand()
 #include <ctime>   // Para inicializar la semilla de generación de números aleatorios
+int intentos; // Dificultad por defecto
 #include "adivinar.cpp"
 #include "verificacion.cpp"
 #include "inicializacion.cpp"
