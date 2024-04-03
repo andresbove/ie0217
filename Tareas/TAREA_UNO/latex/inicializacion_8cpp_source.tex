@@ -1,0 +1,20 @@
+\doxysection{inicializacion.\+cpp}
+\hypertarget{inicializacion_8cpp_source}{}\label{inicializacion_8cpp_source}\mbox{\hyperlink{inicializacion_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{header_8hpp}{header.hpp}}"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00010\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{inicializacion_8cpp_a31ce1bf076496cf3da3af6338ae0e5ee}{inicializacion}}(\textcolor{keyword}{const}\ std::string\ palabras[],\ \textcolor{keywordtype}{int}\ longitud)\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//\ Se\ genera\ el\ valor\ aleatorio\ inicial}}
+\DoxyCodeLine{00012\ \ \ \ \ std::srand(std::time(0));}
+\DoxyCodeLine{00013\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}intentos\ disponibles:\ "{}}<<\ \mbox{\hyperlink{header_8hpp_aa94c7b86d418ed6114b2278c43734e57}{intentos}}\ <<\ std::endl;\ \textcolor{comment}{//\ Se\ imprimen\ los\ intentos\ disponibles}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ se\ elige\ una\ palabra\ aleatoria\ del\ array}}
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ palabra\ =\ palabras[std::rand()\ \%\ longitud];}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ se\ llama\ a\ la\ función\ de\ verificación}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ palabra.length();\ ++i)\ \{\ \textcolor{comment}{//\ se\ define\ un\ ciclo\ que\ recorra\ el\ array}}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\_"{}};\ \ \textcolor{comment}{//\ Se\ genera\ un\ string\ de\ '\_'\ de\ la\ misma\ cantidad\ de\ caracteres\ de\ la\ plabra.}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \}\ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{verificacion_8cpp_a94520801f63b4e7479557c5b15522637}{verificacion}}(palabra);\ \textcolor{comment}{//\ Se\ llama\ a\ la\ funcion\ 'verificacion'}}
+\DoxyCodeLine{00021\ \}}
+
+\end{DoxyCode}

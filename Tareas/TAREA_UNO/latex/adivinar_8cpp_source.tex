@@ -1,0 +1,27 @@
+\doxysection{adivinar.\+cpp}
+\hypertarget{adivinar_8cpp_source}{}\label{adivinar_8cpp_source}\mbox{\hyperlink{adivinar_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{header_8hpp}{header.hpp}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{adivinar_8cpp_a261187a29f1807c676cf904fcacbf955}{adivinar}}(\textcolor{keyword}{const}\ std::string\&\ palabra)\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{char}\ caracterABuscar;}
+\DoxyCodeLine{00011\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Ingrese\ un\ caracter:\ "{}};}
+\DoxyCodeLine{00012\ \ \ \ \ std::cin\ >>\ caracterABuscar;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{bool}\ encontrado\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ Bucle\ for\ para\ recorrer\ cada\ caracter\ de\ la\ palabra}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ palabra.length();\ ++i)\ }
+\DoxyCodeLine{00018\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (palabra[i]\ ==\ caracterABuscar)\ \ \textcolor{comment}{//\ Si\ la\ entrada\ del\ array\ es\ igual\ al\ caracter\ ingresado}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ encontrado\ =\ \textcolor{keyword}{true};\ \ \textcolor{comment}{//\ Se\ cambia\ su\ estado\ a\ 'true'}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \textcolor{comment}{//\ Si\ se\ encuentra\ el\ caracter,\ salimos\ del\ bucle}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordflow}{return}\ encontrado;}
+\DoxyCodeLine{00027\ \}}
+
+\end{DoxyCode}

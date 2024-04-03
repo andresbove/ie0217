@@ -1,0 +1,32 @@
+\doxysection{header.\+hpp}
+\hypertarget{header_8hpp_source}{}\label{header_8hpp_source}\mbox{\hyperlink{header_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ AHORCADO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ AHORCADO\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <cstdlib>}\ \textcolor{comment}{//\ Para\ utilizar\ la\ función\ rand()}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <ctime>}\ \ \ \textcolor{comment}{//\ Para\ inicializar\ la\ semilla\ de\ generación\ de\ números\ aleatorios}}
+\DoxyCodeLine{00007\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{header_8hpp_aa94c7b86d418ed6114b2278c43734e57}{intentos}};\ \textcolor{comment}{//\ Dificultad\ por\ defecto}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{adivinar_8cpp}{adivinar.cpp}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{verificacion_8cpp}{verificacion.cpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{inicializacion_8cpp}{inicializacion.cpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{diccionario_8cpp}{diccionario.cpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dificultad_8cpp}{dificultad.cpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{agregar_palabras_8cpp}{agregarPalabras.cpp}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ Se\ define\ la\ estructura\ de\ "{}Ahorcado"{}}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_ahorcado}{Ahorcado}}}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{struct_ahorcado_aa78cdb1071f6095363356ad8d06e04d3}{palabra}};\ \ \ \ \ \ \ \textcolor{comment}{//\ La\ palabra\ a\ adivinar}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{struct_ahorcado_afba794eefe0b4241c487fac658634d29}{estadoActual}};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ El\ estado\ actual\ de\ la\ palabra\ adivinada}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_ahorcado_a094ee73a5b166936c8118e7a103a2646}{intentosPermitidos}};\ \ \ \ \ \ \ \textcolor{comment}{//\ El\ número\ máximo\ de\ intentos\ permitidos}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_ahorcado_aa29d7b4a02f1fa17a05f17293825e6ba}{intentosRealizados}};\ \ \ \ \ \ \ \textcolor{comment}{//\ El\ número\ actual\ de\ intentos\ realizados}}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif}\textcolor{comment}{//\ AHORCADO\_H}}
+
+\end{DoxyCode}

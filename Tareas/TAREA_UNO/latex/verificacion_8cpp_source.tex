@@ -1,0 +1,34 @@
+\doxysection{verificacion.\+cpp}
+\hypertarget{verificacion_8cpp_source}{}\label{verificacion_8cpp_source}\mbox{\hyperlink{verificacion_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{header_8hpp}{header.hpp}}"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00011\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{verificacion_8cpp_a94520801f63b4e7479557c5b15522637}{verificacion}}(\textcolor{keyword}{const}\ std::string\&\ palabra)\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ contador\ =\ 0;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ intentos2\ =\ 0;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Llamar\ a\ la\ función\ para\ buscar\ el\ caracter\ en\ la\ palabra}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{adivinar_8cpp_a261187a29f1807c676cf904fcacbf955}{adivinar}}(palabra)\ ==\ \textcolor{keyword}{true})\ \{\ \textcolor{comment}{//Si\ el\ resultado\ es\ 'true'}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Acierto.\ El\ caracter\ esta\ en\ la\ palabra."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ contador++;\ \textcolor{comment}{//\ Se\ le\ suma\ a\ 'contador'}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{\ \ \textcolor{comment}{//\ Si\ es\ 'false'}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Fallo.\ El\ caracter\ no\ esta\ en\ la\ palabra.\ Intentelo\ de\ nuevo."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ intentos2++;\ \textcolor{comment}{//\ se\ le\ suma\ al\ otro\ contador}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Le\ quedan\ "{}}\ <<\ \mbox{\hyperlink{header_8hpp_aa94c7b86d418ed6114b2278c43734e57}{intentos}}\ -\/\ intentos2\ <<\ \textcolor{stringliteral}{"{}\ intentos"{}}<<\ std::endl;\ \textcolor{comment}{//\ Se\ imprimen\ los\ intentos\ restantes}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (intentos2\ ==\ \mbox{\hyperlink{header_8hpp_aa94c7b86d418ed6114b2278c43734e57}{intentos}})\{\ \textcolor{comment}{//\ Si\ la\ cantidad\ de\ intentos\ ejecutados\ es\ igual\ a\ los\ definidos\ por\ la\ dificultad,\ el\ juego\ para}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Perdio\ el\ juego"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (contador\ ==\ palabra.length())\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Palabra\ adivinada"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ palabra\ <<\ std::endl;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \}}
+
+\end{DoxyCode}

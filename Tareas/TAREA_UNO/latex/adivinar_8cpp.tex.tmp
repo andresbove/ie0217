@@ -1,0 +1,32 @@
+\doxysection{adivinar.\+cpp File Reference}
+\hypertarget{adivinar_8cpp}{}\label{adivinar_8cpp}\index{adivinar.cpp@{adivinar.cpp}}
+{\ttfamily \#include "{}header.\+hpp"{}}\newline
+Include dependency graph for adivinar.\+cpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{adivinar_8cpp_a261187a29f1807c676cf904fcacbf955}{adivinar}} (const std\+::string \&palabra)
+\begin{DoxyCompactList}\small\item\em Se establece la funcion \textquotesingle{}adivinar\textquotesingle{} Esta se encargara de ver si la palabra se esta adivinando o no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{adivinar_8cpp_a261187a29f1807c676cf904fcacbf955}\label{adivinar_8cpp_a261187a29f1807c676cf904fcacbf955} 
+\index{adivinar.cpp@{adivinar.cpp}!adivinar@{adivinar}}
+\index{adivinar@{adivinar}!adivinar.cpp@{adivinar.cpp}}
+\doxysubsubsection{\texorpdfstring{adivinar()}{adivinar()}}
+{\footnotesize\ttfamily bool adivinar (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{palabra }\end{DoxyParamCaption})}
+
+
+
+Se establece la funcion \textquotesingle{}adivinar\textquotesingle{} Esta se encargara de ver si la palabra se esta adivinando o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em palabra} & es el diccionario ya definido de strings \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
