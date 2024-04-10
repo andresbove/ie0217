@@ -1,41 +1,41 @@
-#include "header.hpp"
+#include "header.hpp"  // Se incluye el archivo "header.hpp"
 
-class Planeta {
-public:
-    void imprimirInformacion() const {
+class Planeta { // Se define la clase 'Planeta
+public: // Se establece el constructor como publico
+    void imprimirInformacion() const {  // Se crea una metodo para imprimir un mensaje al usuario
         std::cout << "Informacion del planeta" << std::endl;
     }
 };
 
-class Pais {
-protected:
-    std::string nombre;
-    int habitantes;
+class Pais { // Se crea la clase 'Pais'
+protected: // Se establecen atributos protegidos
+    std::string nombre; // atributo tipo string
+    int habitantes; // atributo tipo int
     double PIB;
 
-public:
-    Pais(const std::string& n, int hab) : nombre(n), habitantes(hab) {
-        srand(time(0));
+public: // Se define el constructor como publico
+    Pais(const std::string& n, int hab) : nombre(n), habitantes(hab) { // Le van a entrar los datos 'n' y 'hab' al constructor
+        srand(time(0));  
         PIB = rand() % 1000 + 100; // PIB aleatorio entre 100 y 1000
     }
 
-    bool operator==(const Pais& otro) const {
+    bool operator==(const Pais& otro) const { // Se define un metodo booleano
         return this->nombre == otro.nombre;
     }
 
-    virtual void imprimirInformacion() const {
+    virtual void imprimirInformacion() const {  // Se define un metodo para imprimir informacion al usuario
         std::cout << "Nombre: " << nombre << std::endl;
         std::cout << "Habitantes: " << habitantes << std::endl;
         std::cout << "PIB: " << PIB << std::endl;
     }
 };
 
-class PaisPrimerMundo : public Pais {
-private:
+class PaisPrimerMundo : public Pais { // Se crea una clase llamada 'PaisPrimerMundo', heredada de 'Pais'
+private:  // Atributos de la clase 'PaisPrimerMundo'
     bool tecnologia5G;
     bool aeropuerto;
 
-    void calcularCaracteristicas() {
+    void calcularCaracteristicas() { //Metodos de la clase 'PaisPrimerMundo'
         tecnologia5G = false;
         aeropuerto = false;
     }
