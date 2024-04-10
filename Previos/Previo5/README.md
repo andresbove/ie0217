@@ -10,11 +10,4 @@ Usar estos comandos:
 ``g++ .\arbol.cpp -o ejecutable``  
 ``g++ .\queue.cpp -o ejecutable``  
 ``g++ .\listaEnlazada.cpp -o ejecutable``  
-``g++ .\stack.cpp -o ejecutable``   
-Es muy importante recalcar que la dificultad se le tiene que indicar. No hay dificultad predeterminada. Una vez indicada, el juego se puede ejecutar con la cantidad de intentos que uno desee.
-
-
-
-g++ .\Memoria.cpp -o ejecutable
-g++ .\MemoriaDinamica.cpp -o ejecutable
-
+``g++ .\stack.cpp -o ejecutable``
