@@ -1,8 +1,28 @@
 #include "header.hpp"  // Se incluye el archivo "header.hpp"
 
-int main() {  // Se estable el main
-    srand(time(0)); 
+/**
+* @brief Se establece el main principal
+* Esta es una funcion
+* Nada mas imprime mensajes al usuario
+* @param  mostrarMenu
+*/
 
+int main() {  // Se estable el main
+    srand(time(0)); // Generador de numeros aleatorios
+
+
+/**
+* @brief Se establece el main principal
+* Esta es una funcion
+* Nada mas imprime mensajes al usuario
+* @param  mostrarMenu
+*/
+
+
+/**
+* @brief Se establece el vector para guardar los paises
+* @param  paises
+*/
     std::vector<Pais*> paises; // Vector donde se guardaran los paises ingresados
 
     Planeta planeta;
@@ -13,6 +33,10 @@ int main() {  // Se estable el main
         mostrarMenu(); // Inicio del menu
         std::cin >> opcion;
         switch (opcion) { // Dependendiendo de la opcion se va a alguno de los casos
+
+/**
+* @brief Se establece el caso 1, donde se imprime la informacion de los paises
+*/
             case 1:
                 std::cout << "informacion de todos los paises:" << std::endl;
                 for (int i = 0; i < paises.size(); ++i) {  // Se recocorre el array 'paises'
@@ -21,6 +45,9 @@ int main() {  // Se estable el main
                     std::cout << std::endl;
                 }
                 break;
+/**
+* @brief Se establece el caso 2, donde se tienen que ingresar los indicadores de los paises
+*/
             case 2:
                 int indice1, indice2; // Se definen dos variables
                 std::cout << "Ingrese el indice del primer pais: "; // Se guarda un indice en una variable
@@ -37,6 +64,10 @@ int main() {  // Se estable el main
                     std::cout << "indices inválidos." << std::endl;
                 }
                 break;
+/**
+* @brief Se establece el caso 3, donde se tienen que ingresar los indicadores de los paises
+*/
+
             case 3:
                 int tipo, hab;
                 bool tieneAeropuerto;
@@ -67,6 +98,10 @@ int main() {  // Se estable el main
                     std::cout << "Tipo de pais inválido." << std::endl;
                 }
                 break;
+
+/**
+* @brief Se establece el caso 4, donde se le indica al usuario cual pais quiere eliminar
+*/
             case 4:
                 int indiceEliminar; // Se usa el indice del pais para eliminarlo
                 std::cout << "Ingrese el indice del pais que desea eliminar: ";
@@ -79,6 +114,10 @@ int main() {  // Se estable el main
                     std::cout << "indice inválido." << std::endl;
                 }
                 break;
+/**
+* @brief Se establece el caso 5, opcion para salir del programa
+*/
+
             case 5:
                 std::cout << "Saliendo del programa." << std::endl;
                 break;
