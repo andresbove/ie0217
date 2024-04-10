@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="clases_8cpp" kind="file" language="C++">
+    <compoundname>clases.cpp</compoundname>
+    <includes refid="header_8hpp" local="yes">header.hpp</includes>
+    <includedby refid="header_8hpp" local="yes">header.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>clases.cpp</label>
+        <link refid="clases_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>header.hpp</label>
+        <link refid="header_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstdlib</label>
+      </node>
+      <node id="5">
+        <label>ctime</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>clases.cpp</label>
+        <link refid="clases_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>header.hpp</label>
+        <link refid="header_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_planeta" prot="public">Planeta</innerclass>
+    <innerclass refid="class_pais" prot="public">Pais</innerclass>
+    <innerclass refid="class_pais_primer_mundo" prot="public">PaisPrimerMundo</innerclass>
+    <innerclass refid="class_pais_en_desarrollo" prot="public">PaisEnDesarrollo</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="clases_8cpp_1ac0aca0f34a52fbe7527a03517bc3347e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mostrarMenu</definition>
+        <argsstring>()</argsstring>
+        <name>mostrarMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="83" column="6" bodyfile="clases.cpp" bodystart="83" bodyend="91"/>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="10" endline="136">main</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="header_8hpp" kindref="compound">header.hpp</ref>&quot;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Se<sp/>incluye<sp/>el<sp/>archivo<sp/>&quot;header.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_planeta" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_planeta" kindref="compound">Planeta</ref><sp/>{<sp/></highlight><highlight class="comment">//<sp/>Se<sp/>define<sp/>la<sp/>clase<sp/>&apos;Planeta</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Se<sp/>establece<sp/>el<sp/>constructor<sp/>como<sp/>publico</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_planeta_1a82d6ee7115b7aadf82483dc8a37531ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_planeta_1a82d6ee7115b7aadf82483dc8a37531ce" kindref="member">imprimirInformacion</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/><sp/></highlight><highlight class="comment">//<sp/>Se<sp/>crea<sp/>una<sp/>metodo<sp/>para<sp/>imprimir<sp/>un<sp/>mensaje<sp/>al<sp/>usuario</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Informacion<sp/>del<sp/>planeta&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_pais" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pais" kindref="compound">Pais</ref><sp/>{<sp/></highlight><highlight class="comment">//<sp/>Se<sp/>crea<sp/>la<sp/>clase<sp/>&apos;Pais&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Se<sp/>establecen<sp/>atributos<sp/>protegidos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_pais_1ae95d92bc72e5bdf6d171894d8390be12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_pais_1ae95d92bc72e5bdf6d171894d8390be12" kindref="member">nombre</ref>;<sp/></highlight><highlight class="comment">//<sp/>atributo<sp/>tipo<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_pais_1a254b9e8e0e2a6f6815cd0cf93b3e6b76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_pais_1a254b9e8e0e2a6f6815cd0cf93b3e6b76" kindref="member">habitantes</ref>;<sp/></highlight><highlight class="comment">//<sp/>atributo<sp/>tipo<sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_pais_1a01e918da59b3788821db735851d0daae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_pais_1a01e918da59b3788821db735851d0daae" kindref="member">PIB</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Se<sp/>define<sp/>el<sp/>constructor<sp/>como<sp/>publico</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_pais_1ae779cca13bdf6b3a6b09a2f0a0af6ba0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pais_1ae779cca13bdf6b3a6b09a2f0a0af6ba0" kindref="member">Pais</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hab)<sp/>:<sp/><ref refid="class_pais_1ae95d92bc72e5bdf6d171894d8390be12" kindref="member">nombre</ref>(n),<sp/><ref refid="class_pais_1a254b9e8e0e2a6f6815cd0cf93b3e6b76" kindref="member">habitantes</ref>(hab)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>Le<sp/>van<sp/>a<sp/>entrar<sp/>los<sp/>datos<sp/>&apos;n&apos;<sp/>y<sp/>&apos;hab&apos;<sp/>al<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand(time(0));<sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_pais_1a01e918da59b3788821db735851d0daae" kindref="member">PIB</ref><sp/>=<sp/>rand()<sp/>%<sp/>1000<sp/>+<sp/>100;<sp/></highlight><highlight class="comment">//<sp/>PIB<sp/>aleatorio<sp/>entre<sp/>100<sp/>y<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_pais_1af831f8d6b0be23c1d80a3f0489622e18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_pais_1af831f8d6b0be23c1d80a3f0489622e18" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_pais" kindref="compound">Pais</ref>&amp;<sp/>otro)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">//<sp/>Se<sp/>define<sp/>un<sp/>metodo<sp/>booleano</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;nombre<sp/>==<sp/>otro.<ref refid="class_pais_1ae95d92bc72e5bdf6d171894d8390be12" kindref="member">nombre</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0" kindref="member">imprimirInformacion</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/><sp/></highlight><highlight class="comment">//<sp/>Se<sp/>define<sp/>un<sp/>metodo<sp/>para<sp/>imprimir<sp/>informacion<sp/>al<sp/>usuario</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Nombre:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_pais_1ae95d92bc72e5bdf6d171894d8390be12" kindref="member">nombre</ref><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Habitantes:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_pais_1a254b9e8e0e2a6f6815cd0cf93b3e6b76" kindref="member">habitantes</ref><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;PIB:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_pais_1a01e918da59b3788821db735851d0daae" kindref="member">PIB</ref><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_pais_primer_mundo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pais_primer_mundo" kindref="compound">PaisPrimerMundo</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_pais" kindref="compound">Pais</ref><sp/>{<sp/></highlight><highlight class="comment">//<sp/>Se<sp/>crea<sp/>una<sp/>clase<sp/>llamada<sp/>&apos;PaisPrimerMundo&apos;,<sp/>heredada<sp/>de<sp/>&apos;Pais&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><sp/></highlight><highlight class="comment">//<sp/>Atributos<sp/>de<sp/>la<sp/>clase<sp/>&apos;PaisPrimerMundo&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tecnologia5G;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>aeropuerto;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calcularCaracteristicas()<sp/>{<sp/></highlight><highlight class="comment">//Metodos<sp/>de<sp/>la<sp/>clase<sp/>&apos;PaisPrimerMundo&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tecnologia5G<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aeropuerto<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44" refid="class_pais_primer_mundo_1a4819145aa1bc5041cf8c98331c033194" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pais_primer_mundo_1a4819145aa1bc5041cf8c98331c033194" kindref="member">PaisPrimerMundo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hab)<sp/>:<sp/><ref refid="class_pais" kindref="compound">Pais</ref>(n,<sp/>hab)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>calcularCaracteristicas();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_pais_primer_mundo_1a627872e3737951be5e726acb62fed825" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pais_primer_mundo_1a627872e3737951be5e726acb62fed825" kindref="member">setTecnologia5G</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tiene5G)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tecnologia5G<sp/>=<sp/>tiene5G;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="class_pais_primer_mundo_1a135c2a5218dc6df41fa8bd31db5b122b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pais_primer_mundo_1a135c2a5218dc6df41fa8bd31db5b122b" kindref="member">setAeropuerto</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tieneAeropuerto)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aeropuerto<sp/>=<sp/>tieneAeropuerto;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_pais_primer_mundo_1a89e9b41f0961434769371929fd4b92de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pais_primer_mundo_1a89e9b41f0961434769371929fd4b92de" kindref="member">imprimirInformacion</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0" kindref="member">Pais::imprimirInformacion</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Tecnologia<sp/>5G:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(tecnologia5G<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;Si&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;No&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Aeropuerto:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(aeropuerto<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;Si&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;No&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="class_pais_en_desarrollo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pais_en_desarrollo" kindref="compound">PaisEnDesarrollo</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_pais" kindref="compound">Pais</ref><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>aeropuerto;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68" refid="class_pais_en_desarrollo_1a865e565682d10418a803435daf5465f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pais_en_desarrollo_1a865e565682d10418a803435daf5465f5" kindref="member">PaisEnDesarrollo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hab)<sp/>:<sp/><ref refid="class_pais" kindref="compound">Pais</ref>(n,<sp/>hab)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aeropuerto<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>Los<sp/>paises<sp/>en<sp/>desarrollo<sp/>no<sp/>tienen<sp/>aeropuertos<sp/>por<sp/>defecto</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_pais_en_desarrollo_1a5d6f99efe456a8871ee7369c56fb5596" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pais_en_desarrollo_1a5d6f99efe456a8871ee7369c56fb5596" kindref="member">setAeropuerto</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tieneAeropuerto)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aeropuerto<sp/>=<sp/>tieneAeropuerto;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_pais_en_desarrollo_1a81c5144b0451d83ee4f6eea1d5442e53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pais_en_desarrollo_1a81c5144b0451d83ee4f6eea1d5442e53" kindref="member">imprimirInformacion</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0" kindref="member">Pais::imprimirInformacion</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Tecnologia<sp/>5G:<sp/>No&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;<sp/></highlight><highlight class="comment">//<sp/>Los<sp/>paises<sp/>en<sp/>desarrollo<sp/>no<sp/>tienen<sp/>tecnologia<sp/>5G</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Aeropuerto:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(aeropuerto<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;Si&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;No&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="clases_8cpp_1ac0aca0f34a52fbe7527a03517bc3347e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="clases_8cpp_1ac0aca0f34a52fbe7527a03517bc3347e" kindref="member">mostrarMenu</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nMenu:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;1.<sp/>Imprimir<sp/>informacion<sp/>de<sp/>todos<sp/>los<sp/>paises.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;2.<sp/>Comparar<sp/>paises.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;3.<sp/>Agregar<sp/>un<sp/>nuevo<sp/>pais.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;4.<sp/>Eliminar<sp/>un<sp/>pais.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;5.<sp/>Salir<sp/>del<sp/>programa.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Ingrese<sp/>la<sp/>opcion<sp/>deseada:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="clases.cpp"/>
+  </compounddef>
+</doxygen>

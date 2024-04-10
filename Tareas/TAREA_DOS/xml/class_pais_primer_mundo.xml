@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pais_primer_mundo" kind="class" language="C++" prot="public">
+    <compoundname>PaisPrimerMundo</compoundname>
+    <basecompoundref refid="class_pais" prot="public" virt="non-virtual">Pais</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pais_primer_mundo_1a6febe069781637ee6667ffca10736893" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PaisPrimerMundo::tecnologia5G</definition>
+        <argsstring></argsstring>
+        <name>tecnologia5G</name>
+        <qualifiedname>PaisPrimerMundo::tecnologia5G</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="35" column="10" bodyfile="clases.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pais_primer_mundo_1af91a3349d4d51bed9e8c88cee6178dc4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PaisPrimerMundo::aeropuerto</definition>
+        <argsstring></argsstring>
+        <name>aeropuerto</name>
+        <qualifiedname>PaisPrimerMundo::aeropuerto</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="36" column="10" bodyfile="clases.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_pais_primer_mundo_1ab09aa0091941eb7bf576f97008d4fb11" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PaisPrimerMundo::calcularCaracteristicas</definition>
+        <argsstring>()</argsstring>
+        <name>calcularCaracteristicas</name>
+        <qualifiedname>PaisPrimerMundo::calcularCaracteristicas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="38" column="10" bodyfile="clases.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pais_primer_mundo_1a4819145aa1bc5041cf8c98331c033194" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PaisPrimerMundo::PaisPrimerMundo</definition>
+        <argsstring>(const std::string &amp;n, int hab)</argsstring>
+        <name>PaisPrimerMundo</name>
+        <qualifiedname>PaisPrimerMundo::PaisPrimerMundo</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="44" column="5" bodyfile="clases.cpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pais_primer_mundo_1a627872e3737951be5e726acb62fed825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PaisPrimerMundo::setTecnologia5G</definition>
+        <argsstring>(bool tiene5G)</argsstring>
+        <name>setTecnologia5G</name>
+        <qualifiedname>PaisPrimerMundo::setTecnologia5G</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>tiene5G</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="48" column="10" bodyfile="clases.cpp" bodystart="48" bodyend="50"/>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="10" endline="136">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pais_primer_mundo_1a135c2a5218dc6df41fa8bd31db5b122b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PaisPrimerMundo::setAeropuerto</definition>
+        <argsstring>(bool tieneAeropuerto)</argsstring>
+        <name>setAeropuerto</name>
+        <qualifiedname>PaisPrimerMundo::setAeropuerto</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>tieneAeropuerto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="52" column="10" bodyfile="clases.cpp" bodystart="52" bodyend="54"/>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="10" endline="136">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pais_primer_mundo_1a89e9b41f0961434769371929fd4b92de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void PaisPrimerMundo::imprimirInformacion</definition>
+        <argsstring>() const override</argsstring>
+        <name>imprimirInformacion</name>
+        <qualifiedname>PaisPrimerMundo::imprimirInformacion</qualifiedname>
+        <reimplements refid="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0">imprimirInformacion</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="56" column="10" bodyfile="clases.cpp" bodystart="56" bodyend="60"/>
+        <references refid="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0" compoundref="clases_8cpp" startline="26" endline="30">Pais::imprimirInformacion</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Pais</label>
+        <link refid="class_pais"/>
+      </node>
+      <node id="1">
+        <label>PaisPrimerMundo</label>
+        <link refid="class_pais_primer_mundo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Pais</label>
+        <link refid="class_pais"/>
+      </node>
+      <node id="1">
+        <label>PaisPrimerMundo</label>
+        <link refid="class_pais_primer_mundo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="clases.cpp" line="33" column="1" bodyfile="clases.cpp" bodystart="33" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_pais_primer_mundo_1af91a3349d4d51bed9e8c88cee6178dc4" prot="private" virt="non-virtual"><scope>PaisPrimerMundo</scope><name>aeropuerto</name></member>
+      <member refid="class_pais_primer_mundo_1ab09aa0091941eb7bf576f97008d4fb11" prot="private" virt="non-virtual"><scope>PaisPrimerMundo</scope><name>calcularCaracteristicas</name></member>
+      <member refid="class_pais_1a254b9e8e0e2a6f6815cd0cf93b3e6b76" prot="protected" virt="non-virtual"><scope>PaisPrimerMundo</scope><name>habitantes</name></member>
+      <member refid="class_pais_primer_mundo_1a89e9b41f0961434769371929fd4b92de" prot="public" virt="virtual"><scope>PaisPrimerMundo</scope><name>imprimirInformacion</name></member>
+      <member refid="class_pais_1ae95d92bc72e5bdf6d171894d8390be12" prot="protected" virt="non-virtual"><scope>PaisPrimerMundo</scope><name>nombre</name></member>
+      <member refid="class_pais_1af831f8d6b0be23c1d80a3f0489622e18" prot="public" virt="non-virtual"><scope>PaisPrimerMundo</scope><name>operator==</name></member>
+      <member refid="class_pais_1ae779cca13bdf6b3a6b09a2f0a0af6ba0" prot="public" virt="non-virtual"><scope>PaisPrimerMundo</scope><name>Pais</name></member>
+      <member refid="class_pais_primer_mundo_1a4819145aa1bc5041cf8c98331c033194" prot="public" virt="non-virtual"><scope>PaisPrimerMundo</scope><name>PaisPrimerMundo</name></member>
+      <member refid="class_pais_1a01e918da59b3788821db735851d0daae" prot="protected" virt="non-virtual"><scope>PaisPrimerMundo</scope><name>PIB</name></member>
+      <member refid="class_pais_primer_mundo_1a135c2a5218dc6df41fa8bd31db5b122b" prot="public" virt="non-virtual"><scope>PaisPrimerMundo</scope><name>setAeropuerto</name></member>
+      <member refid="class_pais_primer_mundo_1a627872e3737951be5e726acb62fed825" prot="public" virt="non-virtual"><scope>PaisPrimerMundo</scope><name>setTecnologia5G</name></member>
+      <member refid="class_pais_primer_mundo_1a6febe069781637ee6667ffca10736893" prot="private" virt="non-virtual"><scope>PaisPrimerMundo</scope><name>tecnologia5G</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
