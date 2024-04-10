@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pais" kind="class" language="C++" prot="public">
+    <compoundname>Pais</compoundname>
+    <derivedcompoundref refid="class_pais_en_desarrollo" prot="public" virt="non-virtual">PaisEnDesarrollo</derivedcompoundref>
+    <derivedcompoundref refid="class_pais_primer_mundo" prot="public" virt="non-virtual">PaisPrimerMundo</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_pais_1ae95d92bc72e5bdf6d171894d8390be12" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Pais::nombre</definition>
+        <argsstring></argsstring>
+        <name>nombre</name>
+        <qualifiedname>Pais::nombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="12" column="17" bodyfile="clases.cpp" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0" compoundref="clases_8cpp" startline="26" endline="30">imprimirInformacion</referencedby>
+        <referencedby refid="class_pais_1af831f8d6b0be23c1d80a3f0489622e18" compoundref="clases_8cpp" startline="22" endline="24">operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pais_1a254b9e8e0e2a6f6815cd0cf93b3e6b76" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pais::habitantes</definition>
+        <argsstring></argsstring>
+        <name>habitantes</name>
+        <qualifiedname>Pais::habitantes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="13" column="9" bodyfile="clases.cpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0" compoundref="clases_8cpp" startline="26" endline="30">imprimirInformacion</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pais_1a01e918da59b3788821db735851d0daae" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Pais::PIB</definition>
+        <argsstring></argsstring>
+        <name>PIB</name>
+        <qualifiedname>Pais::PIB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="14" column="12" bodyfile="clases.cpp" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0" compoundref="clases_8cpp" startline="26" endline="30">imprimirInformacion</referencedby>
+        <referencedby refid="class_pais_1ae779cca13bdf6b3a6b09a2f0a0af6ba0" compoundref="clases_8cpp" startline="17" endline="20">Pais</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pais_1ae779cca13bdf6b3a6b09a2f0a0af6ba0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Pais::Pais</definition>
+        <argsstring>(const std::string &amp;n, int hab)</argsstring>
+        <name>Pais</name>
+        <qualifiedname>Pais::Pais</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="17" column="5" bodyfile="clases.cpp" bodystart="17" bodyend="20"/>
+        <references refid="class_pais_1a01e918da59b3788821db735851d0daae" compoundref="clases_8cpp" startline="14">PIB</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pais_1af831f8d6b0be23c1d80a3f0489622e18" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pais::operator==</definition>
+        <argsstring>(const Pais &amp;otro) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>Pais::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="class_pais" kindref="compound">Pais</ref> &amp;</type>
+          <declname>otro</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="22" column="10" bodyfile="clases.cpp" bodystart="22" bodyend="24"/>
+        <references refid="class_pais_1ae95d92bc72e5bdf6d171894d8390be12" compoundref="clases_8cpp" startline="12">nombre</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Pais::imprimirInformacion</definition>
+        <argsstring>() const</argsstring>
+        <name>imprimirInformacion</name>
+        <qualifiedname>Pais::imprimirInformacion</qualifiedname>
+        <reimplementedby refid="class_pais_primer_mundo_1a89e9b41f0961434769371929fd4b92de">imprimirInformacion</reimplementedby>
+        <reimplementedby refid="class_pais_en_desarrollo_1a81c5144b0451d83ee4f6eea1d5442e53">imprimirInformacion</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clases.cpp" line="26" column="18" bodyfile="clases.cpp" bodystart="26" bodyend="30"/>
+        <references refid="class_pais_1a254b9e8e0e2a6f6815cd0cf93b3e6b76" compoundref="clases_8cpp" startline="13">habitantes</references>
+        <references refid="class_pais_1ae95d92bc72e5bdf6d171894d8390be12" compoundref="clases_8cpp" startline="12">nombre</references>
+        <references refid="class_pais_1a01e918da59b3788821db735851d0daae" compoundref="clases_8cpp" startline="14">PIB</references>
+        <referencedby refid="class_pais_primer_mundo_1a89e9b41f0961434769371929fd4b92de" compoundref="clases_8cpp" startline="56" endline="60">PaisPrimerMundo::imprimirInformacion</referencedby>
+        <referencedby refid="class_pais_en_desarrollo_1a81c5144b0451d83ee4f6eea1d5442e53" compoundref="clases_8cpp" startline="76" endline="80">PaisEnDesarrollo::imprimirInformacion</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Pais</label>
+        <link refid="class_pais"/>
+      </node>
+      <node id="2">
+        <label>PaisEnDesarrollo</label>
+        <link refid="class_pais_en_desarrollo"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PaisPrimerMundo</label>
+        <link refid="class_pais_primer_mundo"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Pais</label>
+        <link refid="class_pais"/>
+      </node>
+    </collaborationgraph>
+    <location file="clases.cpp" line="10" column="1" bodyfile="clases.cpp" bodystart="10" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_pais_1a254b9e8e0e2a6f6815cd0cf93b3e6b76" prot="protected" virt="non-virtual"><scope>Pais</scope><name>habitantes</name></member>
+      <member refid="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0" prot="public" virt="virtual"><scope>Pais</scope><name>imprimirInformacion</name></member>
+      <member refid="class_pais_1ae95d92bc72e5bdf6d171894d8390be12" prot="protected" virt="non-virtual"><scope>Pais</scope><name>nombre</name></member>
+      <member refid="class_pais_1af831f8d6b0be23c1d80a3f0489622e18" prot="public" virt="non-virtual"><scope>Pais</scope><name>operator==</name></member>
+      <member refid="class_pais_1ae779cca13bdf6b3a6b09a2f0a0af6ba0" prot="public" virt="non-virtual"><scope>Pais</scope><name>Pais</name></member>
+      <member refid="class_pais_1a01e918da59b3788821db735851d0daae" prot="protected" virt="non-virtual"><scope>Pais</scope><name>PIB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

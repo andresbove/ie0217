@@ -1,34 +1,60 @@
-#include "header.hpp"
+#include "header.hpp"  // Se incluye el archivo "header.hpp"
+
+/**
+* @brief Se establece el main principal
+* Esta es una funcion
+* Nada mas imprime mensajes al usuario
+* @param  mostrarMenu
+*/
+
+int main() {  // Se estable el main
+    srand(time(0)); // Generador de numeros aleatorios
 
 
-int main() {
-    srand(time(0));
+/**
+* @brief Se establece el main principal
+* Esta es una funcion
+* Nada mas imprime mensajes al usuario
+* @param  mostrarMenu
+*/
 
-    std::vector<Pais*> paises;
+
+/**
+* @brief Se establece el vector para guardar los paises
+* @param  paises
+*/
+    std::vector<Pais*> paises; // Vector donde se guardaran los paises ingresados
 
     Planeta planeta;
 
     int opcion;
     std::string nombre; // Declarar aquí la variable 'nombre'
     do {
-        mostrarMenu();
+        mostrarMenu(); // Inicio del menu
         std::cin >> opcion;
-        switch (opcion) {
+        switch (opcion) { // Dependendiendo de la opcion se va a alguno de los casos
+
+/**
+* @brief Se establece el caso 1, donde se imprime la informacion de los paises
+*/
             case 1:
                 std::cout << "informacion de todos los paises:" << std::endl;
-                for (int i = 0; i < paises.size(); ++i) {
-                    std::cout << "indice: " << i << std::endl;
-                    paises[i]->imprimirInformacion();
+                for (int i = 0; i < paises.size(); ++i) {  // Se recocorre el array 'paises'
+                    std::cout << "indice: " << i << std::endl; 
+                    paises[i]->imprimirInformacion(); // Se llama a la funcion 'imprimirInformacion'
                     std::cout << std::endl;
                 }
                 break;
+/**
+* @brief Se establece el caso 2, donde se tienen que ingresar los indicadores de los paises
+*/
             case 2:
-                int indice1, indice2;
-                std::cout << "Ingrese el indice del primer pais: ";
-                std::cin >> indice1;
+                int indice1, indice2; // Se definen dos variables
+                std::cout << "Ingrese el indice del primer pais: "; // Se guarda un indice en una variable
+                std::cin >> indice1; 
                 std::cout << "Ingrese el indice del segundo pais: ";
-                std::cin >> indice2;
-                if (indice1 >= 0 && indice1 < paises.size() && indice2 >= 0 && indice2 < paises.size()) {
+                std::cin >> indice2; // Se guarda otro indice en la otra variable
+                if (indice1 >= 0 && indice1 < paises.size() && indice2 >= 0 && indice2 < paises.size()) { // comparacion de los paises
                     if (*paises[indice1] == *paises[indice2]) {
                         std::cout << "Los dos paises son del mismo tipo." << std::endl;
                     } else {
@@ -38,48 +64,60 @@ int main() {
                     std::cout << "indices inválidos." << std::endl;
                 }
                 break;
+/**
+* @brief Se establece el caso 3, donde se tienen que ingresar los indicadores de los paises
+*/
+
             case 3:
                 int tipo, hab;
                 bool tieneAeropuerto;
                 std::cout << "Ingrese el tipo de pais (1 para Primer Mundo, 2 para En Desarrollo): ";
-                std::cin >> tipo;
+                std::cin >> tipo; // Definicion del tipo de paies
                 std::cout << "Ingrese el nombre del pais: ";
                 std::cin.ignore(); // Limpiar el buffer del teclado antes de getline
                 std::getline(std::cin, nombre);
                 std::cout << "Ingrese la cantidad de habitantes del pais: ";
-                std::cin >> hab;
-                if (tipo == 1) {
-                    PaisPrimerMundo* nuevoPais = new PaisPrimerMundo(nombre, hab);
-                    bool tiene5G;
+                std::cin >> hab; 
+                if (tipo == 1) { // Si es de tipo 1
+                    PaisPrimerMundo* nuevoPais = new PaisPrimerMundo(nombre, hab); //Se pone como el pais nuevo al pais de primer mundo
+                    bool tiene5G; // Se crea una variable booleana para la 5G
                     std::cout << "El pais tiene tecnologia 5G? (1 para Si, 0 para No): ";
-                    std::cin >> tiene5G;
-                    nuevoPais->setTecnologia5G(tiene5G);
+                    std::cin >> tiene5G; // Se guarda el valor
+                    nuevoPais->setTecnologia5G(tiene5G); // Se establece que tenga tecnologia 5G
                     std::cout << "El pais tiene aeropuerto? (1 para Si, 0 para No): ";
-                    std::cin >> tieneAeropuerto;
-                    nuevoPais->setAeropuerto(tieneAeropuerto);
+                    std::cin >> tieneAeropuerto; // Se guarda el estado de Aeropuerto
+                    nuevoPais->setAeropuerto(tieneAeropuerto);  // Se establece que se tiene un Aeropuerto
                     paises.push_back(nuevoPais);
-                } else if (tipo == 2) {
+                } else if (tipo == 2) { // Si es un pais en desarollo
                     PaisEnDesarrollo* nuevoPais = new PaisEnDesarrollo(nombre, hab);
                     std::cout << "¿El pais tiene aeropuerto? (1 para Si, 0 para No): ";
-                    std::cin >> tieneAeropuerto;
+                    std::cin >> tieneAeropuerto; // Se guarda el resultado de aeropuerto
                     nuevoPais->setAeropuerto(tieneAeropuerto);
                     paises.push_back(nuevoPais);
                 } else {
                     std::cout << "Tipo de pais inválido." << std::endl;
                 }
                 break;
+
+/**
+* @brief Se establece el caso 4, donde se le indica al usuario cual pais quiere eliminar
+*/
             case 4:
-                int indiceEliminar;
+                int indiceEliminar; // Se usa el indice del pais para eliminarlo
                 std::cout << "Ingrese el indice del pais que desea eliminar: ";
-                std::cin >> indiceEliminar;
-                if (indiceEliminar >= 0 && indiceEliminar < paises.size()) {
-                    delete paises[indiceEliminar];
+                std::cin >> indiceEliminar; // Se guarda el indice
+                if (indiceEliminar >= 0 && indiceEliminar < paises.size()) { // Se busca el inidce en el vector de paises
+                    delete paises[indiceEliminar]; // Se elimina el pais segun el indice
                     paises.erase(paises.begin() + indiceEliminar);
                     std::cout << "pais eliminado correctamente." << std::endl;
                 } else {
                     std::cout << "indice inválido." << std::endl;
                 }
                 break;
+/**
+* @brief Se establece el caso 5, opcion para salir del programa
+*/
+
             case 5:
                 std::cout << "Saliendo del programa." << std::endl;
                 break;

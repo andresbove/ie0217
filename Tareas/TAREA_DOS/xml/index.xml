@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
+  <compound refid="class_pais" kind="class"><name>Pais</name>
+    <member refid="class_pais_1ae95d92bc72e5bdf6d171894d8390be12" kind="variable"><name>nombre</name></member>
+    <member refid="class_pais_1a254b9e8e0e2a6f6815cd0cf93b3e6b76" kind="variable"><name>habitantes</name></member>
+    <member refid="class_pais_1a01e918da59b3788821db735851d0daae" kind="variable"><name>PIB</name></member>
+    <member refid="class_pais_1ae779cca13bdf6b3a6b09a2f0a0af6ba0" kind="function"><name>Pais</name></member>
+    <member refid="class_pais_1af831f8d6b0be23c1d80a3f0489622e18" kind="function"><name>operator==</name></member>
+    <member refid="class_pais_1a030f5aa1d6e1f90ba8b39737029aa0a0" kind="function"><name>imprimirInformacion</name></member>
+  </compound>
+  <compound refid="class_pais_en_desarrollo" kind="class"><name>PaisEnDesarrollo</name>
+    <member refid="class_pais_en_desarrollo_1a5bd28d7f9123af8e2e0f7ef4557ab40b" kind="variable"><name>aeropuerto</name></member>
+    <member refid="class_pais_en_desarrollo_1a865e565682d10418a803435daf5465f5" kind="function"><name>PaisEnDesarrollo</name></member>
+    <member refid="class_pais_en_desarrollo_1a5d6f99efe456a8871ee7369c56fb5596" kind="function"><name>setAeropuerto</name></member>
+    <member refid="class_pais_en_desarrollo_1a81c5144b0451d83ee4f6eea1d5442e53" kind="function"><name>imprimirInformacion</name></member>
+  </compound>
+  <compound refid="class_pais_primer_mundo" kind="class"><name>PaisPrimerMundo</name>
+    <member refid="class_pais_primer_mundo_1a6febe069781637ee6667ffca10736893" kind="variable"><name>tecnologia5G</name></member>
+    <member refid="class_pais_primer_mundo_1af91a3349d4d51bed9e8c88cee6178dc4" kind="variable"><name>aeropuerto</name></member>
+    <member refid="class_pais_primer_mundo_1ab09aa0091941eb7bf576f97008d4fb11" kind="function"><name>calcularCaracteristicas</name></member>
+    <member refid="class_pais_primer_mundo_1a4819145aa1bc5041cf8c98331c033194" kind="function"><name>PaisPrimerMundo</name></member>
+    <member refid="class_pais_primer_mundo_1a627872e3737951be5e726acb62fed825" kind="function"><name>setTecnologia5G</name></member>
+    <member refid="class_pais_primer_mundo_1a135c2a5218dc6df41fa8bd31db5b122b" kind="function"><name>setAeropuerto</name></member>
+    <member refid="class_pais_primer_mundo_1a89e9b41f0961434769371929fd4b92de" kind="function"><name>imprimirInformacion</name></member>
+  </compound>
+  <compound refid="class_planeta" kind="class"><name>Planeta</name>
+    <member refid="class_planeta_1a82d6ee7115b7aadf82483dc8a37531ce" kind="function"><name>imprimirInformacion</name></member>
+  </compound>
+  <compound refid="clases_8cpp" kind="file"><name>clases.cpp</name>
+    <member refid="clases_8cpp_1ac0aca0f34a52fbe7527a03517bc3347e" kind="function"><name>mostrarMenu</name></member>
+  </compound>
+  <compound refid="header_8hpp" kind="file"><name>header.hpp</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+</doxygenindex>
