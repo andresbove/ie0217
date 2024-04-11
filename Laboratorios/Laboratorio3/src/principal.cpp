@@ -32,6 +32,7 @@ void agregarLibro (Libro*& lista){ // se envia la referencia de la variable. Com
     cout << "Ingrese el genero del libro:  " << endl;
     getline(cin, nuevoLibro ->genero);
 
+    nuevoLibro->siguiente = lista;
     lista = nuevoLibro;
 
     cout << "Libro agregado correctamente " << endl;
