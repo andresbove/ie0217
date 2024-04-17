@@ -1,4 +1,4 @@
-// Haciendo un sort de tipo Insertion como se vio en clase, este en su primer paso va a acomodar los extremos.
+// Haciendo un sort de tipo Insertion como se vio en clase, este acomoda los extremos.
 #include <iostream>
 using namespace std;
 
