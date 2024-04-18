@@ -1,4 +1,4 @@
-#include "header.hpp"
+#include "header.hpp" // Se incluye el encabezado donde estan las bibliotecas generales
 
 // Archivo para definir las funciones
 // Estas son llamadas desde el main
