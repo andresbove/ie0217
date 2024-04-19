@@ -1,6 +1,5 @@
 #include "header.hpp"
 
-
 class HashTable {
 private:
     Contacto* tabla[TAM_TABLA_HASH]; // Array de punteros a la lista de contactos
