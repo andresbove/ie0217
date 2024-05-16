@@ -94,9 +94,108 @@ Paso 3: Verificar el Resultado de la Validación
 Si la expresión regular coincide con la dirección de correo electrónico, entonces se considera válida.
 Si la expresión regular no coincide con la dirección de correo electrónico, entonces se considera inválida.
 ### 10.
+El uso de expresiones regulares en aplicaciones de software puede tener importantes implicaciones en el rendimiento, especialmente en contextos donde el tiempo de ejecución es crítico. Aquí hay algunas consideraciones y técnicas para optimizar el uso de expresiones regulares:  
+
+Evaluación de la complejidad: Antes de utilizar una expresión regular, es importante evaluar su complejidad. Expresiones regulares complejas pueden requerir más tiempo de procesamiento, especialmente en cadenas de texto largas o en conjuntos de datos grandes.  
+
+Evitar el uso excesivo de expresiones regulares: Aunque las expresiones regulares son potentes, no siempre son la mejor solución para todos los problemas. En algunos casos, es posible que sea más eficiente utilizar métodos de procesamiento de cadenas más simples y directos.  
+
+Optimización de expresiones regulares: Si es necesario utilizar expresiones regulares, se pueden aplicar varias técnicas para optimizar su rendimiento:  
 ### 11.
+Un Makefile es un archivo de texto que contiene un conjunto de reglas y comandos utilizados por el programa make para compilar y construir proyectos de software. Está especialmente asociado con proyectos escritos en C y C++, aunque también se utiliza en otros lenguajes de programación.
+
+La función principal de un Makefile en un proyecto de C++ es automatizar el proceso de compilación y construcción del software. Esto se logra especificando las dependencias entre los diferentes archivos fuente (.cpp) y los archivos objeto (.o), así como las instrucciones para compilarlos y vincularlos en un ejecutable final.
 ### 12.
+Regla implícita:  
+
+Una regla implícita es una regla general que le dice a make cómo construir un tipo específico de archivo a partir de otro tipo de archivo.
+Define cómo make puede crear un tipo de archivo específico (objetivo) a partir de otro tipo de archivo (prerrequisito) sin necesidad de especificar explícitamente cómo hacerlo.  
+Por ejemplo, en un Makefile para un proyecto de C++, puede haber una regla implícita que indica cómo crear un archivo objeto (.o) a partir de un archivo fuente (.cpp), sin necesidad de escribir una regla explícita para cada par de archivos fuente y objeto.  
+Las reglas implícitas se utilizan para simplificar el Makefile y hacerlo más genérico y fácil de mantener.  
+Regla explícita:  
+
+Una regla explícita es una regla específica que le dice a make cómo construir un objetivo particular a partir de sus prerrequisitos de una manera específica.  
+Define explícitamente cómo make debe construir un objetivo particular, especificando los comandos necesarios para hacerlo.  
+Por ejemplo, si deseas crear un ejecutable llamado mi_programa a partir de varios archivos objeto específicos, necesitarías escribir una regla explícita que especifique los comandos de compilación y vinculación necesarios para lograrlo.  
+Las reglas explícitas son útiles cuando necesitas controlar exactamente cómo se construyen ciertos objetivos y no deseas depender de reglas implícitas genéricas.
 ### 13.
+
+En un Makefile, las macros, también conocidas como variables, tienen varios propósitos importantes:  
+
+Facilitar la configuración y personalización: Las macros permiten definir valores que pueden ser utilizados en múltiples lugares dentro del Makefile. Esto facilita la configuración y personalización del proceso de construcción del proyecto, ya que los valores se pueden cambiar fácilmente modificando solo la definición de la macro.  
+
+Mejorar la legibilidad y mantenibilidad: El uso de macros permite asignar nombres significativos a valores específicos que se utilizan en el Makefile, lo que mejora la legibilidad del código y facilita su mantenimiento. Por ejemplo, en lugar de utilizar valores numéricos o cadenas largas directamente en las reglas del Makefile, se pueden utilizar macros con nombres descriptivos.  
+
+Promover la reutilización de código: Al definir valores comunes una vez como macros, se pueden reutilizar en múltiples partes del Makefile. Esto evita la repetición de código y hace que el Makefile sea más conciso y fácil de mantener.  
+
+Permitir la parametrización: Las macros pueden ser parametrizadas, lo que significa que pueden aceptar argumentos que determinan su valor. Esto permite una mayor flexibilidad en el Makefile, ya que se pueden definir macros que se adapten a diferentes situaciones según los valores proporcionados.  
+
+Facilitar la portabilidad: El uso de macros en lugar de valores específicos puede hacer que el Makefile sea más portable entre diferentes sistemas y entornos de desarrollo. Esto se debe a que las macros pueden ser definidas de manera que se adapten automáticamente a las configuraciones específicas de cada sistema.  
 ### 14.
+
+un objetivo (también conocido como target en inglés) es un resultado específico que se desea obtener al ejecutar el comando make. Puede ser un archivo, un comando, una acción o incluso otro objetivo. Los objetivos representan los productos finales que el usuario quiere construir o las acciones que desea realizar.  
+
+Un objetivo se define en un Makefile mediante una regla. La regla consta de tres partes principales:  
+
+Nombre del objetivo: Es el nombre que se utiliza para referirse al objetivo en el Makefile. Puede ser cualquier cadena de caracteres que no contenga espacios ni caracteres especiales.  
+
+Prerrequisitos (dependencies): Son los archivos u otros objetivos que deben estar disponibles o actualizados antes de que el objetivo pueda ser construido o ejecutado correctamente. Si alguno de los prerrequisitos está más reciente que el objetivo, el Makefile sabe que no es necesario volver a construir el objetivo.  
+
+Receta (recipe): Es el conjunto de comandos que make ejecutará para construir o realizar el objetivo. Estos comandos se ejecutarán solo si el objetivo necesita ser actualizado según las reglas de dependencia.  
 ### 15.
+Organización del código: Dividir el código en múltiples archivos fuente permite organizar de manera más clara y estructurada el código del proyecto. Cada archivo fuente puede contener una parte específica de la funcionalidad del programa, lo que facilita su comprensión y mantenimiento.  
+
+Reutilización de código: Al separar el código en módulos o componentes individuales, es más fácil reutilizar funciones y clases en diferentes partes del proyecto o incluso en otros proyectos. Esto promueve la modularidad y facilita el desarrollo de software más robusto y mantenible.  
+
+Facilidad para trabajar en equipo: Cuando varias personas trabajan en un proyecto, dividir el código en archivos fuente facilita la colaboración al permitir que cada desarrollador se enfoque en áreas específicas del proyecto sin interferir con el trabajo de los demás. Además, el control de versiones se vuelve más efectivo al manejar cambios en archivos más pequeños y específicos.  
+
 ### 16.
+
+En un Makefile, las dependencias entre los archivos fuente se definen mediante reglas que indican cómo se debe construir un archivo fuente (o un objetivo que dependa de él) a partir de otros archivos fuente o archivos objeto. Estas dependencias se establecen para asegurar que los archivos se compilen en el orden correcto y que se vuelvan a compilar solo cuando sea necesario.
+
+Hay varias formas de definir dependencias entre los archivos fuente en un Makefile:
+
+Directiva de dependencias: En GNU Make, se puede utilizar la funcionalidad de generación automática de dependencias (-MMD y -MP) para generar automáticamente las dependencias entre los archivos fuente. 
+
+# 17.
+
+Utilizar variables para configuración condicional: Define variables en el Makefile para configurar opciones de compilación y comandos dependiendo del sistema operativo. Por ejemplo, puedes definir una variable CXX para el compilador de C++ y configurarla con valores diferentes para cada sistema operativo.  
+
+Utilizar comandos condicionales en reglas de compilación: Utiliza comandos condicionales en las reglas de compilación para ejecutar diferentes comandos dependiendo del sistema operativo.  
+
+Evitar dependencias específicas del sistema operativo: Intenta evitar dependencias específicas del sistema operativo en la medida de lo posible. Utiliza herramientas y bibliotecas multiplataforma siempre que sea posible y evita el uso de comandos específicos del sistema operativo en el Makefile.  
+
+Probar en múltiples sistemas operativos: Desarrolla y prueba el Makefile en diferentes sistemas operativos para garantizar que funcione correctamente en todos ellos. Puedes usar máquinas virtuales o contenedores para crear entornos de prueba en diferentes sistemas operativos.  
+
+# 18.
+
+clean:
+El comando clean se utiliza para limpiar el directorio de salida eliminando todos los archivos generados durante el proceso de compilación y construcción. Esto incluye archivos objeto (*.o), archivos de dependencias (*.d), el ejecutable final y cualquier otro archivo generado durante el proceso de compilación.
+
+all:
+El comando all se utiliza para construir o compilar todos los objetivos especificados en el Makefile. Normalmente, el objetivo principal de un Makefile se llama all, y al ejecutar el comando make all se construyen todos los objetivos definidos en el Makefile.
+La finalidad del comando all es construir el proyecto completo de manera conveniente en un solo paso. Puede ser útil cuando se desea compilar todos los archivos fuente y generar el ejecutable final sin tener que especificar cada objetivo individualmente.
+
+# 19.
+Para pasar argumentos desde la línea de comandos a un Makefile, se pueden utilizar variables especiales dentro del Makefile que se llenarán con los valores proporcionados desde la línea de comandos. Estas variables pueden ser utilizadas dentro del Makefile para controlar el comportamiento de las reglas de construcción.  
+
+Definir variables en la línea de comandos: Puedes definir variables en la línea de comandos cuando llamas al comando make, y luego utilizar esas variables dentro del Makefile.  
+
+Utilizar variables predefinidas: Make proporciona varias variables predefinidas que pueden utilizarse para pasar argumentos desde la línea de comandos al Makefile. Por ejemplo, la variable $(MAKEFLAGS) contiene las opciones pasadas al comando make. Puedes definir tus propias variables y asignarles valores basados en estas variables predefinidas.  
+
+# 20.
+# Definición de variables
+```
+CXX = g++
+CXXFLAGS = -Wall -Wextra -std=c++11
+SRC = main.cpp
+OBJ = $(SRC:.cpp=.o)
+
+# Regla para compilar un archivo fuente .cpp a un archivo objeto .o
+%.o: %.cpp
+    $(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Regla para construir el ejecutable
+mi_ejecutable: $(OBJ)
+    $(CXX) $(CXXFLAGS) $^ -o $@
+```
