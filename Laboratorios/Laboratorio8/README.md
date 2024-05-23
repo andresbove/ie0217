@@ -2,7 +2,7 @@
 
 En este laboratorio se trabajó con diferentes comandos de SQL en modo de práctica en línea para el curso.
 
-Andrés Bonilla Vega
+# Andrés Bonilla Vega
 # 1. Write a query to find the first_name, last name and birth date of patients who has height greater than 160 and weight greater than 70  
 
 ```
@@ -37,7 +37,7 @@ HAVING COUNT(*) = 1;
 ```
 
 
-Ismael Jiménez Carballo
+# Ismael Jiménez Carballo
 
 # 1. Show the patient id and the total number of admissions for patient_id 579.  
 
@@ -70,7 +70,7 @@ GROUP BY first_name
 HAVING COUNT(first_name) = 1;
 ```
 
-José Pablo Laurent  
+# José Pablo Laurent  
 ```
 -- Selecciona la columna 'province_name' de la tabla 'province_names'
 select province_name
